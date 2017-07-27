@@ -44,15 +44,28 @@ export const palettes = {
     '#f4b400'   // google yellow 700
   ],
   googleColorBlindAssist: [
+    //'#ff7043',  // orange
+    //'#00ACC1',  // dark cyan
+    //'#AB47BC',  // bright purple
+    //'#2A56C6',  // dark blue
+    '#0b8043',  // green
+    '#f7cb4d',  // yellow
+    '#c0ca33',  // lime
+    //'#5e35b1',  // purple
+    '#A52714',  // red
+  ],
+  // A palette based on `googleColorBlindAssist` that is more accessible
+  // to deuteranopes (anecdotally).
+  tensorboardColorBlindAssist: [
     '#ff7043',  // orange
     '#00ACC1',  // dark cyan
     '#AB47BC',  // bright purple
     '#2A56C6',  // dark blue
-    '#0b8043',  // green
-    '#F7CB4D',  // yellow
-    '#c0ca33',  // lime
+    '#14894c',  // green (modified from Google standard)
+    '#f7d336',  // yellow (modified from Google standard)
+    '#9bca11',  // lime (modified from Google standard)
     '#5e35b1',  // purple
-    '#A52714',  // red
+    '#b92714',  // red (modified from Google standard)
   ],
   // These palettes try to be better for color differentiation.
   // https://personal.sron.nl/~pault/
@@ -66,11 +79,16 @@ export const palettes = {
     '#332288', '#6699cc', '#88ccee', '#44aa99', '#117733', '#999933', '#ddcc77',
     '#cc6677', '#aa4466', '#882255', '#661100', '#aa4499'
   ],
-  // based on this palette: http://mkweb.bcgsc.ca/biovis2012/
   colorBlindAssist4: [
+    '#4477aa', '#66ccee', '#228833', '#ccbb44', '#ee6677', '#aa3377', '#bbbbbb',
+  ],
+  // based on this palette: http://mkweb.bcgsc.ca/biovis2012/
+  colorBlindAssist5: [
     '#FF6DB6', '#920000', '#924900', '#DBD100', '#24FF24', '#006DDB', '#490092'
   ],
   mldash: [
     '#E47EAD', '#F4640D', '#FAA300', '#F5E636', '#00A077', '#0077B8', '#00B7ED'
   ]
 };
+
+export const standard = palettes.colorBlindAssist4;
